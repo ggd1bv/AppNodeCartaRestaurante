@@ -51,7 +51,6 @@ app.get('/', (req, res) => {
       () => {
         findcategorias().then(
           (categorias) => {
-            //console.log(categorias)
             datos.categorias = categorias
             res.render('index.html', { data: datos })
           }
@@ -61,33 +60,6 @@ app.get('/', (req, res) => {
       }
     )
     .catch(console.error)
-
-
-});
-/*
-app.get('/home', (req, res) => {
-  const { MongoClient } = require('mongodb');
-  const client = new MongoClient(MONGO_URL);
-  const dbName = process.env.DBNAME;
-  async function main() {
-    await client.connect();
-    const db = client.db(dbName);
-    const comidas = db.collection(process.env.COLECCIONPLAT).find().sort({ "id": 1 }).toArray()
-    //const categorias = db.collection(process.env.COLECCIONCATS).find().toArray()
-    return comidas
-  }
-
-  main()
-    .then((data) => {
-      //console.log(data)
-      res.render('index.html', { data: data });
-    }
-    )
-    .catch(console.error)
-    .finally(() => client.close());
-
-});
-*/
 
 // RUTAS INDIVIDUALES
 
