@@ -14,8 +14,11 @@ Node + MongoDB + Boostrap
 Variables de entorno:
 
 RUTAMONGO = "mongodb+srv://mongoAdm:XXXXXXXXXXXXXXXXXXX@cluster0.XXXXXXXXXXXXXXXXXXXXXXX"
+
 DBNAME = 'cartarestaurante'
+
 COLECCIONPLAT = 'platosdecomida'
+
 COLECCIONCATS = 'categorias'
 
 ## Index - Home
