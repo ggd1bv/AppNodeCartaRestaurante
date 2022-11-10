@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Alta de plato</title>
+
+</head>
+
+<body>
+    {% include "header.html" %}
+    <div class="card text-center">
+        <div class="card-header">
+            ALTA EXITOSA!
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Se agregó correctamente el plato {{plato}}</h5>
+            <a href="/altaComidas" class="btn btn-primary">Agregar otro Plato</a>
+        </div>
+        <div class="card-footer text-muted">
+            {{fechaActual}}
+        </div>
+    </div>
+    {% include "footer.html" %}
+
+</body>
+
+</html>
